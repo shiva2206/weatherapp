@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:padding="20dp"
+    android:background="#373737">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/qaz"
+        android:layout_alignParentTop="true"
+        app:cardCornerRadius="30dp"
+        app:cardBackgroundColor="#424242"
+        >
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#424242"
+            android:text="Weather App"
+            android:textColor="@color/black">
+
+        </Button>
+    </androidx.cardview.widget.CardView>
+
+    <EditText
+        android:id="@+id/iptxt"
+        android:layout_width="match_parent"
+        android:maxHeight="50dp"
+        android:layout_below="@+id/qaz"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="23dp"
+        android:layout_marginRight="40dp"
+        android:hint="Enter The City"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white">
+
+    </EditText>
+
+    <ImageView
+        android:id="@+id/ser"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/qaz"
+        android:layout_marginTop="26dp"
+        android:layout_marginRight="20dp"
+
+
+        android:background="@drawable/ic_baseline_search_24">
+
+    </ImageView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iptxt"
+        android:layout_marginTop="10dp"
+        app:cardBackgroundColor="#424242"
+        app:cardCornerRadius="30dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/mesg"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:textSize="30dp"
+
+            android:textColor="@color/white"
+            android:text="">
+
+        </TextView>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+
+            android:id="@+id/rl"
+            android:visibility="invisible">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+
+                android:textSize="45dp"
+                android:id="@+id/displaytxt">
+
+            </TextView>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:layout_below="@+id/displaytxt"
+                android:textSize="55dp"
+                android:id="@+id/temp"
+                >
+
+            </TextView>
+            <ImageView
+                android:layout_width="250dp"
+                android:layout_height="250dp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/temp"
+                android:layout_marginTop="20dp"
+                android:id="@+id/img"
+                android:background="@color/cardview_dark_background">
+
+            </ImageView>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:layout_below="@+id/img"
+                android:textSize="25dp"
+                android:id="@+id/wea"
+              >
+
+            </TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:layout_below="@+id/wea"
+                android:textSize="25dp"
+                android:id="@+id/humd"
+                >
+
+            </TextView>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:layout_below="@+id/humd"
+                android:textSize="25dp"
+                android:id="@+id/wind"
+                >
+
+            </TextView>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+
+</RelativeLayout>
